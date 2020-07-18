@@ -1,0 +1,20 @@
+body{
+  padding: 0;
+  margin: 0;
+  font:{
+    family:'Roboto Slab', serif;
+  }
+  background: #f8f8f8;
+}
+.page-main{
+  background: url("../img/bg.png"), no-repeat;
+  background-size: cover;
+}
+.header{
+  &__logo{
+    display: block;
+    width: 137px;
+    height: 28px;
+    background: url("../img/Logo.svg"), no-repeat;
+  }
+}
