@@ -11,7 +11,8 @@
     "url": "git+https://github.com/not-k1ng-solomon/tp-layout-course.git"
   },
   "dependencies": {
-    "gulp-less": "^4.0.1"
+    "gulp-less": "^4.0.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -21,7 +22,9 @@
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-if": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.26.10"
   },
   "author": "",
   "license": "ISC",
