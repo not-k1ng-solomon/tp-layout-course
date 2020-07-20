@@ -1,68 +1,122 @@
-body{
+$light_color: #fff;
+$accent_color: #01ec93;
+$fs_sm: 0.875rem;
+$fs_standard: 1rem;
+$fs_md: 1.4rem;
+$fs_xl: 3rem;
+html {
+  font-size: 16px;
+}
+
+body {
   padding: 0;
   margin: 0;
-  font:{
-    family:'Roboto Slab', serif;
-    size: 12px;
+  font: {
+    family: 'Roboto Slab', serif;
   }
-  background: #f8f8f8;
+  background: $light_color;
 }
-a{
+
+a {
   text-decoration: none;
-  color: #fff;
 }
-.page-main{
+
+.page-main {
   background: url("../img/bg.png"), no-repeat;
   background-size: cover;
 }
-.header{
+
+.header {
+  padding: 25px 0 0 0;
   display: flex;
   justify-content: space-between;
-  &__logo{
+  align-items: center;
+
+  &__logo {
     display: block;
-    width: 137px;
+    width: 116px;
     height: 28px;
-    background: url("../img/Logo.svg"), no-repeat;
+    background: {
+      image: url("../img/logo2.svg");
+      repeat: no-repeat;
+      size: contain;
+    }
   }
-  &-list{
+
+  &-list {
     display: flex;
-    &__item{
-      margin-right: 20px;
-      list-style-type: none;
-      a{
-        font{
-          size: 1.4em;
-        }
+    list-style-type: none;
+    justify-content: flex-end;
+
+    &__item {
+      padding-bottom: 2px;
+      margin-left: 16px;
+
+      border-bottom: 2px solid transparent;
+      transition: 0.5s;
+
+      &:hover {
+        border-bottom: 2px solid $accent_color;
       }
-      .active{
-        border-bottom: 2px solid #65e496;
+
+      font: {
+        family: 'Open Sans', Serif;
       }
+      letter-spacing: 0.5px;
     }
 
+    &__item.active {
+      border-bottom: 2px solid $accent_color;
+    }
+
+    &__link {
+      color: $light_color;
+      font-size: $fs_sm;
+    }
   }
 }
-.block-book{
+
+.block-book {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & .block-content{
-    width: 50%;
-  }
-  & .block-image{
-    width: 50%;
-    margin: 0 auto;
-    height: 450px;
-    background:{
-      image: url('../img/book.svg');
-      size: cover;
-      repeat: no-repeat;
-      position: center;
-    };
-  }
 
 }
-.wrap,.header{
-  max-width: 960px;
+
+.block-content {
+  color: $light_color;
+
+  &__title {
+    font-size: $fs_xl;
+    font-weight: 700;
+    letter-spacing: 3px;
+    span {
+      color: $accent_color;
+      font-size: $fs_standard;
+      font-weight: 300;
+      display: block;
+
+      letter-spacing: 0.5px;
+    }
+  }
+
+  width: 50%;
+}
+
+.block-image {
+  width: 50%;
+  margin: 0 auto;
+  height: 450px;
+  background: {
+    image: url('../img/book.svg');
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  };
+}
+
+.wrap, .header {
+  max-width: 990px;
   margin: 0 auto;
 }
