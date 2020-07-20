@@ -3,18 +3,66 @@ body{
   margin: 0;
   font:{
     family:'Roboto Slab', serif;
+    size: 12px;
   }
   background: #f8f8f8;
+}
+a{
+  text-decoration: none;
+  color: #fff;
 }
 .page-main{
   background: url("../img/bg.png"), no-repeat;
   background-size: cover;
 }
 .header{
+  display: flex;
+  justify-content: space-between;
   &__logo{
     display: block;
     width: 137px;
     height: 28px;
     background: url("../img/Logo.svg"), no-repeat;
   }
+  &-list{
+    display: flex;
+    &__item{
+      margin-right: 20px;
+      list-style-type: none;
+      a{
+        font{
+          size: 1.4em;
+        }
+      }
+      .active{
+        border-bottom: 2px solid #65e496;
+      }
+    }
+
+  }
+}
+.block-book{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .block-content{
+    width: 50%;
+  }
+  & .block-image{
+    width: 50%;
+    margin: 0 auto;
+    height: 450px;
+    background:{
+      image: url('../img/book.svg');
+      size: cover;
+      repeat: no-repeat;
+      position: center;
+    };
+  }
+
+}
+.wrap,.header{
+  max-width: 960px;
+  margin: 0 auto;
 }

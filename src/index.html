@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@300;500;700;800&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -16,22 +17,24 @@
     <header>
         <div class="header">
             <a href="" class="header__logo"></a>
-            <ul class="header-navigation">
-                <li class="header-list__item">Home</li>
-                <li class="header-list__item">About</li>
-                <li class="header-list__item">Contents</li>
-                <li class="header-list__item">Books</li>
-                <li class="header-list__item">Education</li>
-                <li class="header-list__item">Skills</li>
-                <li class="header-list__item">Portfolio</li>
-                <li class="header-list__item">Clients</li>
-                <li class="header-list__item">Contact</li>
+            <ul class="header-list">
+                <li class="header-list__item"><a href="" class="active">Home</a></li>
+                <li class="header-list__item"><a href="">About</a></li>
+                <li class="header-list__item"><a href="">Contents</a></li>
+                <li class="header-list__item"><a href="">Books</a></li>
+                <li class="header-list__item"><a href="">Education</a></li>
+                <li class="header-list__item"><a href="">Skills</a></li>
+                <li class="header-list__item"><a href="">Portfolio</a></li>
+                <li class="header-list__item"><a href="">Clients</a></li>
+                <li class="header-list__item"><a href="">Contact</a></li>
             </ul>
         </div>
     </header>
     <div class="wrap">
         <div class="block-book">
-            <div class="block-image"></div>
+            <div class="block-image">
+                <div class="block-image__wrap"></div>
+            </div>
             <div class="block-content block-content_theme-while">
                 <p class="block-content__name">- By Emma Anderson</p>
                 <h1 class="block-content__title">BUKEE: THE BOOK <span>A room without books is like a body without a soul</span>
@@ -98,7 +101,8 @@
         <div class="shell shell_flex">
             <div class="block-about-book">
                 <h4 class="block-about-book__title">About the book</h4>
-                <p class="block-about-book__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="block-about-book__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore
                     et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillu m dolore eu fugiat nulla pariatur.
@@ -132,6 +136,111 @@
                 </ul>
                 <button class="btn">More</button>
             </div>
+        </div>
+    </div>
+</section>
+<section class="page">
+    <div class="wrap">
+        <h2>Other Books <span>Some books you might be interested in</span></h2>
+        <div class="container-book">
+            <div class="container-book__item">
+                <div class="block-image"></div>
+                <h3 class="container-book__title">Inception</h3>
+                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
+                    ad at commodi consectetur doloremque ipsa, omnis reiciendis unde voluptate?</p>
+                <p class="container-book__cta">READ MORE</p>
+            </div>
+            <div class="container-book__item">
+                <div class="block-image"></div>
+                <h3 class="container-book__title">Fight Club</h3>
+                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus
+                    exercitationem, facilis fugiat magni nihil numquam repellat rerum suscipit! Praesentium!</p>
+                <p class="container-book__cta">READ MORE</p>
+            </div>
+            <div class="container-book__item">
+                <div class="block-image"></div>
+                <h3 class="container-book__title">Daredevils</h3>
+                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ipsum
+                    iusto laboriosam laborum maiores nihil, praesentium soluta voluptate. Aliquid, tempore?</p>
+                <p class="container-book__cta">READ MORE</p>
+            </div>
+        </div>
+        <button class="conteiner-book__btn">Browse all books</button>
+    </div>
+</section>
+<section class="page">
+    <div class="wrap">
+        <div class="callback">
+            <div class="block-image">
+                <span></span>
+            </div>
+            <h3 class="callback__name">Kate Dennings <span>Calligraphy Expert</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto eaque eos et fuga magnam
+                neque nesciunt odio, sequi! Accusamus deleniti nihil obcaecati veritatis!</p>
+            <div class="callback__line"><i class="icons"></i><i class="icons"></i><i class="icons"></i></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="page">
+        <div class="wrap">
+            <div class="events">
+                <div class="block-img">
+                    <img src="" alt="">
+                </div>
+                <div class="events-information">
+                    <small>-Emma Anderson</small>
+                    <h3>Upcoming Events <span>Some upcoming events you might be interested in</span></h3>
+                    <div class="events-information__item">
+                        <p class="events-information-date">November 21, 2020</p>
+                        <h4 class="events-information-title">November 21, 2020</h4>
+                        <p class="events-information-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Dolore eligendi incidunt pariatur, placeat provident veniam. A ad, autem commodi molestiae,
+                            nesciunt omnis perferendis perspiciatis placeat porro quae quia repellat, sint.</p>
+                        <button class="btn">Register</button>
+                    </div>
+                    <div class="events-information__item">
+                        <p class="events-information-date">November 21, 2020</p>
+                        <h4 class="events-information-title">November 21, 2020</h4>
+                        <p class="events-information-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Dolore eligendi incidunt pariatur, placeat provident veniam. A ad, autem commodi molestiae,
+                            nesciunt omnis perferendis perspiciatis placeat porro quae quia repellat, sint.</p>
+                        <button class="btn">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page">
+    <div class="wrap">
+        <div class="blog">
+            <h2>Latest from Blog<span>Some of the latest posts from my personal blog</span></h2>
+            <div class="blog-container">
+                <div class="blog-container__item">
+                    <div class="blog-container__item-photo"></div>
+                    <h4 class="blog-container__item-title">Importance of light in photography</h4>
+                    <p class="blog-container__item-date">By Emma Anderson - June 20, 2018</p>
+                    <p class="blog-container__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        beatae debitis, dolorem doloremque perspiciatis qui reprehenderit saepe similique vel
+                        voluptas.</p>
+                </div>
+                <div class="blog-container__item">
+                    <div class="blog-container__item-photo"></div>
+                    <h4 class="blog-container__item-title">The tools you need for the perfection</h4>
+                    <p class="blog-container__item-date">By Emma Anderson - June 25, 2018</p>
+                    <p class="blog-container__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Expedita fuga sunt tempora vitae voluptas. Cumque ea esse soluta tempore voluptatum.</p>
+                </div>
+                <div class="blog-container__item">
+                    <div class="blog-container__item-photo"></div>
+                    <h4 class="blog-container__item-title">Knowing the difference is important</h4>
+                    <p class="blog-container__item-date">By Emma Anderson - June 30, 2018</p>
+                    <p class="blog-container__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                        beatae eos, et laudantium obcaecati ullam? Aperiam maxime nihil officiis possimus.</p>
+                </div>
+            </div>
+            <button class="btn">Read more in the blog</button>
         </div>
     </div>
 </section>

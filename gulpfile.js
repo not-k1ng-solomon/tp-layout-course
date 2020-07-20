@@ -23,7 +23,7 @@ gulp.task('less',()=>{
         }))
         .pipe(less())
         .pipe(concat('bundle.css'))
-        .pipe(cleanCss())
+        // .pipe(cleanCss())
         .pipe(gulpIf(isDevelopment,sourcemaps.write()))
         .pipe(gulp.dest('public/css'))
         .pipe(browserSync.stream());
@@ -38,7 +38,7 @@ gulp.task('sass',()=>{
         }))
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
-        .pipe(cleanCss())
+        // .pipe(cleanCss())
         .pipe(gulpIf(isDevelopment,sourcemaps.write()))
         .pipe(gulp.dest('public/css'))
         .pipe(browserSync.stream());
