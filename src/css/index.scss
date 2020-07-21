@@ -1,9 +1,11 @@
 $light_color: #fff;
 $accent_color: #01ec93;
+
+$fs_es: 0.5rem;
 $fs_sm: 0.875rem;
 $fs_standard: 1rem;
 $fs_md: 1.4rem;
-$fs_xl: 3rem;
+$fs_xl: 2.5rem;
 html {
   font-size: 16px;
 }
@@ -24,6 +26,7 @@ a {
 .page-main {
   background: url("../img/bg.png"), no-repeat;
   background-size: cover;
+  padding-bottom: 50px;
 }
 
 .header {
@@ -77,44 +80,94 @@ a {
 }
 
 .block-book {
-  margin-top: 30px;
+  padding-top: 120px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
 
+  &-demo {
+    flex-basis: 390px;
+    width: 370px;
+    height: 558px;
+    background: {
+      image: url('../img/book-v2.svg');
+      size: contain;
+      repeat: no-repeat;
+      position: left;
+      position-y: 16px;
+    };
+  }
 }
 
 .block-content {
+  margin: 0;
+  padding:{
+    left: 45px;
+  }
   color: $light_color;
+  flex-basis: calc(100% - 400px);
+  &__name {
+    font: {
+      weight: 300;
+      family: 'Open Sans', Serif;
+      size: $fs_standard;
+    }
+    letter-spacing: 0.7px;
+  }
 
   &__title {
-    font-size: $fs_xl;
-    font-weight: 700;
-    letter-spacing: 3px;
-    span {
-      color: $accent_color;
-      font-size: $fs_standard;
-      font-weight: 300;
-      display: block;
+    margin-top: 0;
+    font: {
+      size: $fs_xl;
+      weight: 700;
+    }
+    letter-spacing: 2px;
 
+    span {
+      margin-top: 4px;
+      color: $accent_color;
+      font: {
+        size: $fs_standard;
+        weight: 300;
+      }
+      display: block;
       letter-spacing: 0.5px;
     }
   }
 
-  width: 50%;
+  &__body {
+    padding-right: 80px;
+    p{
+      line-height: 1.35rem;
+      letter-spacing: 0.05px;
+      font: {
+        family: 'Open Sans', Serif;
+        size: $fs_sm;
+        weight: 500;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    background-color: $accent_color;
+    padding: 10px 0px;
+    margin-top: 40px;
+    max-width: 215px;
+    border-radius: 3px;
+    color: $light_color;
+    text-align: center;
+  }
+  small{
+    display: block;
+    margin-top: 20px;
+    font:{
+      size: $fs_es;
+      style: italic;
+    }
+    letter-spacing: 1.3px;
+  }
 }
 
-.block-image {
-  width: 50%;
-  margin: 0 auto;
-  height: 450px;
-  background: {
-    image: url('../img/book.svg');
-    size: cover;
-    repeat: no-repeat;
-    position: center;
-  };
-}
 
 .wrap, .header {
   max-width: 990px;
