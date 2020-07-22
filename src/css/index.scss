@@ -83,7 +83,7 @@ a {
   padding-top: 120px;
   display: flex;
   justify-content: flex-start;
-  color: $light_color;
+
   &-demo {
     flex-basis: 390px;
     width: 370px;
@@ -103,7 +103,7 @@ a {
   padding:{
     left: 45px;
   }
-
+  color: $light_color;
   flex-basis: calc(100% - 400px);
   &__name {
     font: {
@@ -111,7 +111,7 @@ a {
       family: 'Open Sans', Serif;
       size: $fs_standard;
     }
-    letter-spacing: 0.7px;
+    letter-spacing: 0.75px;
   }
 
   &__title {
