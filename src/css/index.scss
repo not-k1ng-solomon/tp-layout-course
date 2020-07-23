@@ -1,5 +1,5 @@
 $light_color: #fff;
-$accent_color: #01ec93;
+$accent_color: #65E496;
 
 $fs_es: 0.5rem;
 $fs_sm: 0.875rem;
@@ -26,7 +26,7 @@ a {
 .page-main {
   background: url("../img/bg.png"), no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-bottom: 130px;
 }
 
 .header {
@@ -85,6 +85,7 @@ a {
   justify-content: flex-start;
 
   &-demo {
+    text-align: center;
     flex-basis: 390px;
     width: 370px;
     height: 558px;
@@ -94,17 +95,52 @@ a {
       repeat: no-repeat;
       position: left;
       position-y: 16px;
-    };
+    }
+
+    &__title {
+      padding: 73px 0 250px 32px;
+      letter-spacing: 1px;
+      color: $light_color;
+      font: {
+        weight: 700;
+        family: 'Roboto Slab', serif;
+        size: 1.9rem;
+      }
+
+      span {
+        display: block;
+        color: $accent_color;
+        letter-spacing: 0.01px;
+        font: {
+          family: 'Open Sans', Serif;
+          weight: 300;
+          size: 0.82rem;
+        }
+      }
+    }
+
+    &__footer {
+      color: $accent_color;
+text-align: left;
+      letter-spacing: 0.4px;
+      padding-left: 75px;
+      padding-top: 48px;
+      font: {
+        size: 0.75rem;
+        family: 'Open Sans', Serif;
+      }
+    }
   }
 }
 
 .block-content {
   margin: 0;
-  padding:{
+  padding: {
     left: 45px;
   }
   color: $light_color;
   flex-basis: calc(100% - 400px);
+
   &__name {
     font: {
       weight: 300;
@@ -136,7 +172,8 @@ a {
 
   &__body {
     padding-right: 80px;
-    p{
+
+    p {
       line-height: 1.35rem;
       letter-spacing: 0.05px;
       font: {
@@ -157,10 +194,11 @@ a {
     color: $light_color;
     text-align: center;
   }
-  small{
+
+  small {
     display: block;
     margin-top: 20px;
-    font:{
+    font: {
       size: $fs_es;
       style: italic;
     }
