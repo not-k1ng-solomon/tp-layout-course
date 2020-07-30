@@ -1,5 +1,6 @@
 $light_color: #fff;
 $accent_color: #65E496;
+$green_color: #65e4af;
 
 $fs_es: 0.5rem;
 $fs_sm: 0.875rem;
@@ -28,7 +29,6 @@ a {
   background-size: cover;
   padding-bottom: 130px;
 }
-
 .header {
   padding: 25px 0 0 0;
   display: flex;
@@ -121,7 +121,7 @@ a {
 
     &__footer {
       color: $accent_color;
-text-align: left;
+      text-align: left;
       letter-spacing: 0.4px;
       padding-left: 75px;
       padding-top: 48px;
@@ -138,8 +138,15 @@ text-align: left;
   padding: {
     left: 45px;
   }
-  color: $light_color;
   flex-basis: calc(100% - 400px);
+
+  &.block-content_theme-while {
+    color: #44444f;
+  }
+
+  &.block-content_theme-green {
+    color: $light_color;
+  }
 
   &__name {
     font: {
@@ -206,7 +213,66 @@ text-align: left;
   }
 }
 
-
+.block-author {
+  padding: 136px 0;
+  display: flex;
+  justify-content: space-between;
+  .block-content{
+    padding-left: 0;
+    &__name{
+      font: {
+        size: $fs_sm;
+      }
+      letter-spacing: 1.5px;
+    }
+    &__title{
+      margin: 0;
+      padding-bottom: 0;
+      font-size: $fs_xl;
+    }
+    &__subtitle{
+      margin-top: 0;
+      letter-spacing: 0.35px;
+      line-height: 26px;
+      font-size: $fs_standard;
+      font-weight: 400;
+      &_text-success{
+        color: $accent_color;
+      }
+    }
+    &__body p{
+      letter-spacing: 0.6px;
+      padding: 12px 0 0 0;
+      margin-bottom: 5px;
+      margin-top: 0;
+      font-family: 'Open Sans', Serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    &__btn{
+      font-size: $fs_sm;
+      font-weight: 300;
+      background-color: $green_color;
+      max-width: 200px;
+      letter-spacing: 1px;
+    }
+  }
+}
+.block-avatar {
+  position: relative;
+  &__svg{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 368px;
+    height: 469px;
+  }
+  &__img{
+    max-width: 370px;
+    margin-top: 42px;
+    margin-right: 40px;
+  }
+}
 .wrap, .header {
   max-width: 990px;
   margin: 0 auto;
