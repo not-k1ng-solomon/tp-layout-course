@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+.wrap, .header {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
 .page-main {
   background: url("../img/bg.png"), no-repeat;
   background-size: cover;
@@ -214,7 +219,7 @@ a {
 }
 
 .block-author {
-  padding: 136px 0;
+  padding: 138px 0;
   display: flex;
   justify-content: space-between;
   .block-content{
@@ -273,7 +278,21 @@ a {
     margin-right: 40px;
   }
 }
-.wrap, .header {
-  max-width: 990px;
-  margin: 0 auto;
+.block-counter{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  &__value{
+    font-family: 'Roboto Slab', serif;
+    display: block;
+    color: $accent_color;
+    font-size: 4.3rem;
+    font-weight: 100;
+  }
+  &__description{
+    margin: 5px 0 0 0;
+    font-family: 'Open Sans', Serif;
+    color: #696980;
+    letter-spacing: 0.4px;
+  }
 }
