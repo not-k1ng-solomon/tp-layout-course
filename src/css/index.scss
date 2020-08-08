@@ -31,35 +31,54 @@ a {
   margin: 0 auto;
 }
 
-.page{
-  padding-top: 138px;
-  padding-bottom: 117px ;
+.page {
+  padding-top: 0;
+  padding-bottom: 0;
+
   &-main {
     background: url("../img/bg.png"), no-repeat;
     background-size: cover;
     padding-bottom: 130px;
   }
-  &_gray{
+
+  &_gray {
     background-color: $bg_l;
   }
-  &__title{
+
+  &__title {
     text-align: center;
     font-size: 2.4rem;
     letter-spacing: 2.8px;
     line-height: 40px;
     color: $text_dark_color;
-    &_top{
-      padding-top: 116px;
+
+    &_top {
+      padding-top: 126px;
     }
   }
-  &__subtitle{
+
+  &__subtitle {
     display: block;
     color: $accent_color;
     font-size: 1rem;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.45px;
     font-weight: 300;
   }
+
+  &__btn{
+    padding: 13px 28px;
+    background-color: #65E496;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 1.1px;
+    line-height: 13px;
+    font-weight: 300;
+    border-radius: 3px;
+  }
 }
+
 .header {
   padding: 25px 0 0 0;
   display: flex;
@@ -120,6 +139,8 @@ a {
     flex-basis: 390px;
     width: 370px;
     height: 558px;
+    position: relative;
+
     background: {
       image: url('../img/book-v2.svg');
       size: contain;
@@ -129,7 +150,9 @@ a {
     }
 
     &__title {
-      padding: 73px 0 250px 32px;
+      position: absolute;
+      left: 112px;
+      top: 80px;
       letter-spacing: 1px;
       color: $light_color;
       font: {
@@ -151,11 +174,11 @@ a {
     }
 
     &__footer {
+      position: absolute;
       color: $accent_color;
-      text-align: left;
       letter-spacing: 0.4px;
-      padding-left: 75px;
-      padding-top: 48px;
+      left: 75px;
+      bottom: 36px;
       font: {
         size: 0.75rem;
         family: 'Open Sans', Serif;
@@ -231,6 +254,19 @@ a {
     border-radius: 3px;
     color: $light_color;
     text-align: center;
+    position: relative;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      height: 20px;
+      width: 100%;
+      bottom: -2px;
+      border-radius: 3px;
+      background-color: #b2f1be;
+      z-index: -1;
+      margin-left: -28px;
+    }
   }
 
   small {
@@ -245,33 +281,39 @@ a {
 }
 
 .block-author {
-  padding: 0 0;
+  padding: 139px 0 0 0;
   display: flex;
   justify-content: space-between;
-  .block-content{
+
+  .block-content {
     padding-left: 0;
-    &__name{
+
+    &__name {
       font: {
         size: $fs_sm;
       }
       letter-spacing: 1.5px;
     }
-    &__title{
+
+    &__title {
       margin: 0;
       padding-bottom: 0;
       font-size: $fs_xl;
     }
-    &__subtitle{
+
+    &__subtitle {
       margin-top: 0;
       letter-spacing: 0.35px;
       line-height: 26px;
       font-size: $fs_standard;
       font-weight: 400;
-      &_text-success{
+
+      &_text-success {
         color: $accent_color;
       }
     }
-    &__body p{
+
+    &__body p {
       letter-spacing: 0.6px;
       padding: 12px 0 0 0;
       margin-bottom: 5px;
@@ -280,7 +322,9 @@ a {
       font-size: 0.8rem;
       font-weight: 500;
     }
-    &__btn{
+
+    &__btn {
+      display: block;
       font-size: $fs_sm;
       font-weight: 300;
       background-color: $green_color;
@@ -289,33 +333,41 @@ a {
     }
   }
 }
+
 .block-avatar {
   position: relative;
-  &__svg{
+
+  &__svg {
     position: absolute;
     right: 0;
     z-index: -1;
     width: 368px;
     height: 469px;
   }
-  &__img{
+
+  &__img {
     max-width: 370px;
     margin-top: 42px;
     margin-right: 40px;
   }
 }
-.block-counter{
+
+.block-counter {
+  padding-top: 139px;
+  padding-bottom: 105px;
   display: flex;
   justify-content: space-around;
   text-align: center;
-  &__value{
+
+  &__value {
     font-family: 'Roboto Slab', serif;
     display: block;
     color: $accent_color;
     font-size: 4.3rem;
     font-weight: 100;
   }
-  &__description{
+
+  &__description {
     margin: 5px 0 0 0;
     font-family: 'Open Sans', Serif;
     color: #696980;
@@ -323,43 +375,53 @@ a {
   }
 }
 
-.block-about{
+.block-about {
   padding-top: 3px;
   display: flex;
   justify-content: space-between;
   color: $text_dark_color;
-  h3{
+  padding-bottom: 216px;
+
+  h3 {
     font-size: $fs_md;
     letter-spacing: 0.3px;
     margin-bottom: 14px;
   }
-  &-book{
+
+  &-book {
     flex-basis: 41%;
-    &__body{
+
+    &__body {
       font-family: 'Open Sans', Serif;
       letter-spacing: 0.4px;
       line-height: 20px;
       font-size: 0.8rem;
       font-weight: 600;
     }
-    &__featured{
+
+    &__featured {
       display: flex;
-      i{
+
+      i {
         padding-top: 15px;
         padding-left: 13px;
         color: $accent_color;
       }
+
       p {
         padding-right: 6px;
         margin-top: 12px;
         padding-left: 3px;
         letter-spacing: 0.4px;
       }
+
       //letter-spacing: ;
     }
   }
-  &-table{
+
+  &-table {
     flex-basis: 49%;
+
     .btn {
       margin: 23px 0 0 3px;
       padding: 15px 39px;
@@ -372,7 +434,8 @@ a {
       font-family: 'Roboto Slab', serif;
       border: 0;
     }
-    &__list{
+
+    &__list {
       font-weight: 600;
       font-size: 0.8rem;
       font-family: 'Open Sans', Serif;
@@ -381,17 +444,20 @@ a {
       column-count: 2;
       counter-reset: list;
       padding-top: 4px;
-      &-item{
+
+      &-item {
         counter-increment: list;
         list-style-type: none;
         letter-spacing: 0.5px;
         padding-left: 32px;
         margin-bottom: 9px;
         position: relative;
-        &::before{
+
+        &::before {
           content: counter(list) ". ";
         }
-        &::after{
+
+        &::after {
           margin-left: 4px;
           position: absolute;
           padding: 5px;
@@ -406,4 +472,124 @@ a {
       }
     }
   }
+}
+
+.container-book {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+
+  &__page-title_top {
+    padding-top: 96px;
+  }
+
+  &__block-image {
+    margin-top: 16px;
+    color: $light_color;
+    position: relative;
+    margin-left: 44px;
+    text-align: center;
+    flex-basis: 390px;
+    width: 238px;
+    height: 361px;
+    background: {
+      image: url('../img/book-main-v2.svg');
+      size: cover;
+      repeat: no-repeat;
+      position: left;
+      position-y: 16px;
+    }
+
+    &-demo-title {
+      position: absolute;
+      left: 60px;
+      top: 53px;
+      letter-spacing: 0.3px;
+      color: #fff;
+      font-weight: 500;
+      font-family: 'Roboto Slab', serif;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+
+
+      span {
+        text-transform: none;
+        display: block;
+        color: $accent_color;
+        letter-spacing: 0.6px;
+        font-family: 'Open Sans', Serif;
+        font-weight: 300;
+        font-size: 0.62rem;
+        margin-top: 5px;
+      }
+    }
+
+    &-demo-footer {
+      position: absolute;
+      color: #65E496;
+      letter-spacing: -0.1px;
+      left: 69px;
+      bottom: 15px;
+      font-size: 0.7rem;
+      font-family: 'Open Sans', Serif;
+    }
+  }
+
+
+  &__title {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 0;
+    letter-spacing: 0.8px;
+  }
+
+  &__body {
+    font-family: 'Open Sans', Serif;
+    font-size: 0.9rem;
+    line-height: 21px;
+    padding: 0 20px;
+    letter-spacing: -0.2px;
+    margin-top: 10px;
+  }
+
+  &__cta {
+    font-family: 'Open Sans', Serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    a {
+      color: $accent_color;
+    }
+  }
+
+  &__btn {
+    padding: 13px 28px;
+    margin-bottom: 117px;
+    margin-top: 60px;
+    background: linear-gradient(to top left,#65e49b,#65e4b0);
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 1.1px;
+    line-height: 13px;
+    font-weight: 300;
+    border-radius: 3px;
+    position: relative;
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      height: 20px;
+      width: 100%;
+      bottom: -2px;
+      border-radius: 3px;
+      background-color: #b2f1be;
+      z-index: -1;
+      margin-left: -28px;
+    }
+  }
+
 }

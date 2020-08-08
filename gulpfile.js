@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCss = require('gulp-clean-css');
 const gulpIf = require('gulp-if');
 const debug = require('gulp-debug');
+const imagemin = require('gulp-imagemin');
 
 const browserSync = require('browser-sync');
 
@@ -49,6 +50,11 @@ gulp.task('html',()=>{
 });
 gulp.task('img',()=>{
     return gulp.src('src/img/**/*.+(png|jpg|jpeg|svg)')
+        .pipe(imagemin([
+            imagemin.gifsicle(),
+            imagemin.optipng(),
+            imagemin.svgo()
+        ]))
         .pipe(gulp.dest('public/img'));
 });
 
