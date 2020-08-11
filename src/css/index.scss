@@ -254,19 +254,7 @@ a {
     border-radius: 3px;
     color: $light_color;
     text-align: center;
-    position: relative;
-    &::before{
-      content: "";
-      display: block;
-      position: absolute;
-      height: 20px;
-      width: 100%;
-      bottom: -2px;
-      border-radius: 3px;
-      background-color: #b2f1be;
-      z-index: -1;
-      margin-left: -28px;
-    }
+    box-shadow: 0 -2px #59bb88 inset;
   }
 
   small {
@@ -327,9 +315,10 @@ a {
       display: block;
       font-size: $fs_sm;
       font-weight: 300;
-      background-color: $green_color;
+      background-color: #65e4af;
       max-width: 200px;
       letter-spacing: 1px;
+      box-shadow: 0 -2px #b2f1be inset;
     }
   }
 }
@@ -433,6 +422,7 @@ a {
       border-radius: 4px;
       font-family: 'Roboto Slab', serif;
       border: 0;
+      box-shadow: 0 -2px #adedbb inset;
     }
 
     &__list {
