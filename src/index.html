@@ -64,7 +64,7 @@
         <div class="block-author">
             <div class="block-content  block-content_theme-while">
                 <p class="block-content__name">- Book Author</p>
-                <h1 class="block-content__title block-content__text_bold">Emma Anderson </h1>
+                <h2 class="block-content__title block-content__text_bold">Emma Anderson </h2>
                 <p class="block-content__subtitle block-content__subtitle_text-success">A room without books is like a
                     body
                     without a soul</p>
@@ -195,11 +195,11 @@
         </div>
     </div>
 </section>
-<section class="page page_gray">
+<section class="page page_dark">
     <div class="wrap">
         <div class="callback">
-            <div class="block-image">
-                <span></span>
+            <div class="callback__block-image">
+                <img class="callback__block-image-item" src="img/max-felner-421525-unsplash.png" alt="">
             </div>
             <h3 class="callback__name">Kate Dennings <span>Calligraphy Expert</span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto eaque eos et fuga magnam
@@ -212,27 +212,33 @@
     <div class="page">
         <div class="wrap">
             <div class="events">
-                <div class="block-img">
-                    <img src="" alt="">
+                <div class="events__block-img">
+                    <svg class="events__svg">
+                        <linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="368" y2="597">
+                            <stop offset="0" style="stop-color: #446987"/>
+                            <stop offset="1" style="stop-color: #59c3ae"/>
+                        </linearGradient>
+                        <rect fill="url(#gradient2)" width="368" height="597" x="0" y="0"></rect>
+                    </svg>
+                    <img src="img/avatar2.png" alt="">
                 </div>
-                <div class="events-information">
-                    <small>-Emma Anderson</small>
-                    <h3>Upcoming Events <span>Some upcoming events you might be interested in</span></h3>
+                <div class="events__information">
+                    <p class="events__name">- Emma Anderson</p>
+                    <h3 class="events__title ">Upcoming Events </h3>
+                    <p class="events__subtitle events__subtitle_text-success">Some upcoming events you might be interested in</p>
                     <div class="events-information__item">
-                        <p class="events-information-date">November 21, 2020</p>
-                        <h4 class="events-information-title">November 21, 2020</h4>
-                        <p class="events-information-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Dolore eligendi incidunt pariatur, placeat provident veniam. A ad, autem commodi molestiae,
-                            nesciunt omnis perferendis perspiciatis placeat porro quae quia repellat, sint.</p>
-                        <button class="btn">Register</button>
+                        <p class="events-information__item-date">November 21, 2020</p>
+                        <h4 class="events-information__item-title">Book signing - San francisco, CA</h4>
+                        <p class="events-information__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        <button class="events-information__item-btn">Register</button>
                     </div>
                     <div class="events-information__item">
-                        <p class="events-information-date">November 21, 2020</p>
-                        <h4 class="events-information-title">November 21, 2020</h4>
-                        <p class="events-information-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <p class="events-information__item-date">November 21, 2020</p>
+                        <h4 class="events-information__item-title">Book signing - San francisco, CA</h4>
+                        <p class="events-information__item-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Dolore eligendi incidunt pariatur, placeat provident veniam. A ad, autem commodi molestiae,
                             nesciunt omnis perferendis perspiciatis placeat porro quae quia repellat, sint.</p>
-                        <button class="btn">Register</button>
+                        <button class="events-information__item-btn">Register</button>
                     </div>
                 </div>
             </div>
