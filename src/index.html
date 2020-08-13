@@ -6,9 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100;300;500;700;800&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d3779e6cc5.js" crossorigin="anonymous"></script>
 </head>
@@ -153,7 +154,8 @@
 </section>
 <section class="page">
     <div class="wrap">
-        <h2 class="page__title container-book__page-title_top ">Other Books <span class="page__subtitle">Some books you might be interested in</span></h2>
+        <h2 class="page__title container-book__page-title_top ">Other Books <span class="page__subtitle">Some books you might be interested in</span>
+        </h2>
         <div class="container-book">
             <div class="container-book__item">
                 <div class="container-book__block-image">
@@ -164,7 +166,8 @@
                     <p class="container-book__block-image-demo-footer">- By Emma Anderson</p>
                 </div>
                 <h3 class="container-book__title">Inception</h3>
-                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore</p>
                 <p class="container-book__cta"><a href="#">READ MORE</a></p>
             </div>
             <div class="container-book__item">
@@ -176,7 +179,8 @@
                     <p class="container-book__block-image-demo-footer">- By Emma Anderson</p>
                 </div>
                 <h3 class="container-book__title">Fight Club</h3>
-                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore</p>
                 <p class="container-book__cta"><a href="#">READ MORE</a></p>
                 <button class="container-book__btn">Browse all books</button>
             </div>
@@ -189,7 +193,8 @@
                     <p class="container-book__block-image-demo-footer">- By Emma Anderson</p>
                 </div>
                 <h3 class="container-book__title">Daredevils</h3>
-                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                <p class="container-book__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore</p>
                 <p class="container-book__cta"><a href="#">READ MORE</a></p>
             </div>
         </div>
@@ -198,13 +203,41 @@
 <section class="page page_dark">
     <div class="wrap">
         <div class="callback">
-            <div class="callback__block-image">
-                <img class="callback__block-image-item" src="img/max-felner-421525-unsplash.png" alt="">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="callback__block-ava">
+                        <div class="callback__block-image">
+                            <img class="callback__block-image-item" src="img/max-felner-421525-unsplash.png" alt="">
+                        </div>
+                        <span class="callback__block-ava-bg"></span>
+                    </div>
+                    <h3 class="callback__name">Kate Dennings <span>Calligraphy Expert</span></h3>
+                    <p class="callback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                        gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <div class="callback__line"><i class="icons"></i><i class="icons"></i><i class="icons"></i></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="callback__block-image">
+                        <img class="callback__block-image-item" src="img/max-felner-421525-unsplash.png" alt="">
+                    </div>
+                    <h3 class="callback__name">Kate Dennings <span>Calligraphy Expert 2</span></h3>
+                    <p class="callback__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        architecto eaque eos et fuga magnam
+                        neque nesciunt odio, sequi! Accusamus deleniti nihil obcaecati veritatis!</p>
+                    <div class="callback__line"><i class="icons"></i><i class="icons"></i><i class="icons"></i></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="callback__block-image">
+                        <img class="callback__block-image-item" src="img/max-felner-421525-unsplash.png" alt="">
+                    </div>
+                    <h3 class="callback__name">Kate Dennings <span>Calligraphy Expert 3</span></h3>
+                    <p class="callback__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        architecto eaque eos et fuga magnam
+                        neque nesciunt odio, sequi! Accusamus deleniti nihil obcaecati veritatis!</p>
+                    <div class="callback__line"><i class="icons"></i><i class="icons"></i><i class="icons"></i></div>
+                </div>
             </div>
-            <h3 class="callback__name">Kate Dennings <span>Calligraphy Expert</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto eaque eos et fuga magnam
-                neque nesciunt odio, sequi! Accusamus deleniti nihil obcaecati veritatis!</p>
-            <div class="callback__line"><i class="icons"></i><i class="icons"></i><i class="icons"></i></div>
         </div>
     </div>
 </section>
@@ -225,17 +258,21 @@
                 <div class="events__information">
                     <p class="events__name">- Emma Anderson</p>
                     <h3 class="events__title ">Upcoming Events </h3>
-                    <p class="events__subtitle events__subtitle_text-success">Some upcoming events you might be interested in</p>
+                    <p class="events__subtitle events__subtitle_text-success">Some upcoming events you might be
+                        interested in</p>
                     <div class="events-information__item">
                         <p class="events-information__item-date">November 21, 2020</p>
                         <h4 class="events-information__item-title">Book signing - San francisco, CA</h4>
-                        <p class="events-information__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        <p class="events-information__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen
+                            disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                         <button class="events-information__item-btn">Register</button>
                     </div>
                     <div class="events-information__item">
                         <p class="events-information__item-date">November 21, 2020</p>
                         <h4 class="events-information__item-title">Book signing - San francisco, CA</h4>
-                        <p class="events-information__item-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <p class="events-information__item-body">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
                             Dolore eligendi incidunt pariatur, placeat provident veniam. A ad, autem commodi molestiae,
                             nesciunt omnis perferendis perspiciatis placeat porro quae quia repellat, sint.</p>
                         <button class="events-information__item-btn">Register</button>
@@ -245,37 +282,38 @@
         </div>
     </div>
 </section>
-<section class="page">
+<section class="page page_gray">
     <div class="wrap">
         <div class="blog">
-            <h2>Latest from Blog<span>Some of the latest posts from my personal blog</span></h2>
+            <h2 class="blog__title">Latest from Blog <span class="blog__subtitle">Some of the latest posts from my personal blog</span>
+            </h2>
             <div class="blog-container">
                 <div class="blog-container-item">
-                    <div class="blog-container-item__photo"></div>
-                    <h4 class="blog-container-item__title">Importance of light in photography</h4>
-                    <p class="blog-container-item__date">By Emma Anderson - June 20, 2018</p>
+                    <div class="blog-container-item__photo"><img src="img/img1.png" alt=""></div>
+                    <h4 class="blog-container-item__title"><a href="#">Importance of light in photography</a></h4>
+                    <p class="blog-container-item__date">By <span>Emma Anderson - June 20, 2018</span></p>
                     <p class="blog-container-item__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Aperiam
                         beatae debitis, dolorem doloremque perspiciatis qui reprehenderit saepe similique vel
                         voluptas.</p>
                 </div>
                 <div class="blog-container-item">
-                    <div class="blog-container-item__photo"></div>
-                    <h4 class="blog-container-item__title">The tools you need for the perfection</h4>
-                    <p class="blog-container-item__date">By Emma Anderson - June 25, 2018</p>
+                    <div class="blog-container-item__photo"><img src="img/img2.png" alt=""></div>
+                    <h4 class="blog-container-item__title"><a href="#">The tools you need for the perfection</a></h4>
+                    <p class="blog-container-item__date">By <span>Emma Anderson - June 25, 2018</span></p>
                     <p class="blog-container-item__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Expedita fuga sunt tempora vitae voluptas. Cumque ea esse soluta tempore voluptatum.</p>
                 </div>
                 <div class="blog-container-item">
-                    <div class="blog-container-item__photo"></div>
-                    <h4 class="blog-container-item__title">Knowing the difference is important</h4>
-                    <p class="blog-container-ite__date">By Emma Anderson - June 30, 2018</p>
+                    <div class="blog-container-item__photo"><img src="img/img3.png" alt=""></div>
+                    <h4 class="blog-container-item__title"><a href="#">Knowing the difference is important</a></h4>
+                    <p class="blog-container-item__date">By <span>Emma Anderson - June 30, 2018</span></p>
                     <p class="blog-container-item__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Animi
                         beatae eos, et laudantium obcaecati ullam? Aperiam maxime nihil officiis possimus.</p>
                 </div>
             </div>
-            <button class="btn">Read more in the blog</button>
+            <button class="blog-btn">Read more in the blog</button>
         </div>
     </div>
 </section>
@@ -283,22 +321,25 @@
     <div class="wrap">
         <div class="newsletter">
             <div class="newsletter__column">
-                <h3 class="newsletter__column_title">Join Newsletter</h3>
-                <p class="newsletter__column__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eligendi est itaque iure minima nam,
-                    nihil nisi odio qui ratione ullam veniam veritatis.
+                <h3 class="newsletter__column-title">Join Newsletter</h3>
+                <p class="newsletter__column-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas
+                    accumsan lacus vel facilisis.
                 </p>
             </div>
             <div class="newsletter__column">
-                <form action="#" class="newsletter__column_form">
-                    <input type="email" class="newsletter__column_input-email" placeholder="Enter your email">
-                    <input type="button" class="newsletter__column_input-btn" value="Subscribe">
+                <form action="#" id="newsletterForm" method="post" class="newsletter__column_form">
+                    <input type="email" name="email" class="newsletter__column_input-email" required
+                           placeholder="Enter your email">
+                    <input type="submit" class="newsletter__column_input-btn" value="Subscribe">
+                    <div class="result"></div>
                 </form>
             </div>
         </div>
     </div>
 </section>
-<footer>
+<footer class="page page_dark-footer">
     <div class="wrap">
         <div class="footer">
             <div class="footer-column">
@@ -336,5 +377,8 @@
         </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
