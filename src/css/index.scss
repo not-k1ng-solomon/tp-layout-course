@@ -66,6 +66,13 @@ a {
   &_dark {
     background: url('../img/bg-callback.png') no-repeat;
     background-size: contain;
+    @media (max-width: 900px) {
+      background-color: #44444f;
+      background-image: none;
+    }
+    @media (min-width: 1400px) {
+      background-size: cover;
+    }
     //position: absolute;
     //top: 0;
     //z-index: -1;
@@ -266,6 +273,9 @@ a {
 
   &__body {
     padding-right: 80px;
+    @media (max-width: 660px) {
+      padding-right: 0;
+    }
 
     p {
       line-height: 1.35rem;
@@ -310,11 +320,19 @@ a {
   padding: 139px 0 0 0;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 660px) {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    text-align: center;
+  }
 
   .block-content {
     padding-left: 0;
     @media (max-width: 850px) {
       flex-basis: calc(100% - 200px);
+    }
+    @media (max-width: 660px) {
+      flex-basis: 100%;
     }
 
     &__name {
@@ -350,6 +368,9 @@ a {
       font-family: 'Open Sans', Serif;
       font-size: 0.8rem;
       font-weight: 500;
+      @media (max-width: 660px) {
+        text-align: left;
+      }
     }
 
     &__btn {
@@ -360,7 +381,9 @@ a {
       max-width: 200px;
       letter-spacing: 1px;
       box-shadow: 0 -2px #b2f1be inset;
-
+      @media (max-width: 660px) {
+        margin: 20px auto;
+      }
       &:focus {
         outline: none;
         padding: 12px 0;
@@ -382,6 +405,10 @@ a {
       width: 200px;
       height: 255px;
     }
+    @media (max-width: 660px) {
+      left: calc(50% - 120px);
+      margin-bottom: 15px;
+    }
   }
 
   &__img {
@@ -394,6 +421,11 @@ a {
       margin-top: 17px;
       margin-right: 15px;
     }
+    @media (max-width: 660px) {
+      padding-left: 20px;
+      left: 0;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -403,6 +435,10 @@ a {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  @media (max-width: 660px) {
+    flex-direction: column;
+    padding: 30px 0;
+  }
 
   &__value {
     font-family: 'Roboto Slab', serif;
@@ -410,6 +446,7 @@ a {
     color: $accent_color;
     font-size: 4.3rem;
     font-weight: 100;
+
   }
 
   &__description {
@@ -417,6 +454,9 @@ a {
     font-family: 'Open Sans', Serif;
     color: #696980;
     letter-spacing: 0.4px;
+    @media (max-width: 660px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -426,6 +466,10 @@ a {
   justify-content: space-between;
   color: $text_dark_color;
   padding-bottom: 216px;
+  @media (max-width: 660px) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   h3 {
     font-size: $fs_md;
@@ -442,6 +486,9 @@ a {
       line-height: 20px;
       font-size: 0.8rem;
       font-weight: 600;
+      @media (max-width: 660px) {
+        text-align: left;
+      }
     }
 
     &__featured {
@@ -487,14 +534,18 @@ a {
     }
 
     &__list {
+
       font-weight: 600;
       font-size: 0.8rem;
       font-family: 'Open Sans', Serif;
-      padding: 0;
+      padding: 4px 0 0 0;
       margin: 0;
       column-count: 2;
       counter-reset: list;
-      padding-top: 4px;
+      @media (max-width: 750px) {
+        column-count: 1;
+        text-align: left;
+      }
 
       &-item {
         counter-increment: list;
@@ -626,6 +677,7 @@ a {
     padding: 13px 28px;
     margin-bottom: 136px;
     margin-top: 60px;
+    margin-left: calc(50% - 95px);
     background: linear-gradient(to top left, #65e49b, #65e4b0);
     color: #fff;
     font-family: 'Roboto Slab', serif;
@@ -635,23 +687,14 @@ a {
     line-height: 13px;
     font-weight: 300;
     border-radius: 3px;
-    position: relative;
+    box-shadow: 0 -2px #adedbb inset;
 
     &:focus {
       outline: none;
     }
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 20px;
-      width: 100%;
-      bottom: -2px;
-      border-radius: 3px;
-      background-color: #b2f1be;
-      z-index: -1;
-      margin-left: -28px;
+    @media (max-width: 900px) {
+      margin-bottom: 50px;
+      margin-top: 30px;
     }
   }
 }
@@ -660,6 +703,9 @@ a {
   color: #9191b5;
   padding-top: 189px;
   padding-bottom: 165px;
+  @media (max-width: 900px) {
+    padding: 50px 0;
+  }
 
   &__name {
     color: #65E496;
@@ -765,10 +811,17 @@ a {
   justify-content: space-between;
   position: relative;
   padding: 121px 0 128px 0;
-
+  @media (max-width: 660px) {
+    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+  }
 
   &__block-img {
     padding-top: 17px;
+    @media (max-width: 660px) {
+      margin-bottom: 40px;
+    }
 
     img {
       height: 512px;
@@ -792,6 +845,9 @@ a {
     @media (max-width: 900px) {
       width: 200px;
       height: 340px;
+    }
+    @media (max-width: 660px) {
+      left: calc(50% - 120px);
     }
   }
 
@@ -846,6 +902,10 @@ a {
       flex-basis: calc(100% - 300px);
       width: calc(100% - 300px);
     }
+    @media (max-width: 660px) {
+      flex-basis: 100%;
+      width: 100%;
+    }
     //padding-left: 90px;
   }
 
@@ -877,6 +937,9 @@ a {
       letter-spacing: 0.2px;
       font-family: 'Open Sans', serif;
       line-height: 20px;
+      @media (max-width: 660px) {
+        text-align: left;
+      }
     }
 
     &-btn {
@@ -1028,6 +1091,7 @@ a {
     flex-direction: column;
     text-align: center;
   }
+
   &__column {
     flex-basis: 49%;
 
@@ -1048,6 +1112,9 @@ a {
       padding-left: 2px;
       letter-spacing: 0.6px;
       line-height: 20px;
+      @media (max-width: 660px) {
+        text-align: left;
+      }
     }
 
     &_form {
@@ -1116,6 +1183,7 @@ a {
     text-align: center;
     padding: 60px 0;
   }
+
   &-column {
     &_one {
       flex-basis: 32%;
@@ -1175,6 +1243,7 @@ a {
     @media (max-width: 650px) {
       justify-content: center;
     }
+
     i {
       margin-right: 8px;
       color: $accent_color;
