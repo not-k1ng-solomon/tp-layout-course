@@ -14,21 +14,25 @@
     <script src="https://kit.fontawesome.com/d3779e6cc5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<section class="page-main">
+<section id="home" class="page-main">
     <header>
         <div class="header">
+            <a href="" class="menu-triger"><i class="fas fa-bars"></i></a>
             <a href="" class="header__logo"></a>
-            <ul class="header-list">
-                <li class="header-list__item active"><a href="" class="header-list__link">Home</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">About</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Contents</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Books</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Education</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Skills</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Portfolio</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Clients</a></li>
-                <li class="header-list__item"><a href="" class="header-list__link">Contact</a></li>
-            </ul>
+            <div class="menu-popup">
+                <a href="" class="menu-close"><i class="far fa-times-circle"></i></a>
+                <ul id="navbar" class="header-list">
+                    <li class="header-list__item active"><a href="#home" class="header-list__link">Home</a></li>
+                    <li class="header-list__item"><a href="#about" class="header-list__link">About</a></li>
+                    <li class="header-list__item"><a href="#contents" class="header-list__link">Contents</a></li>
+                    <li class="header-list__item"><a href="#books" class="header-list__link">Books</a></li>
+                    <li class="header-list__item"><a href="#education" class="header-list__link">Education</a></li>
+                    <li class="header-list__item"><a href="#skills" class="header-list__link">Skills</a></li>
+                    <li class="header-list__item"><a href="#portfolio" class="header-list__link">Portfolio</a></li>
+                    <li class="header-list__item"><a href="#clients" class="header-list__link">Clients</a></li>
+                    <li class="header-list__item"><a href="#contact" class="header-list__link">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="wrap">
@@ -60,7 +64,7 @@
         </div>
     </div>
 </section>
-<section class="page">
+<section id="about" class="page">
     <div class="wrap">
         <div class="block-author">
             <div class="block-content  block-content_theme-while">
@@ -112,7 +116,7 @@
         </div>
     </div>
 </section>
-<section class="page page_gray">
+<section id="contents" class="page page_gray">
     <div class="wrap">
         <h2 class="page__title page__title_top">Book Contents
             <span class="page__subtitle">Let’s see what we have covered in the book</span>
@@ -147,12 +151,24 @@
                     <li class="block-about-table__list-item"> Deserunt, odit, tenetur?</li>
                     <li class="block-about-table__list-item"> Eum perspiciatis</li>
                 </ol>
-                <button class="btn">More</button>
+                <ol id="nextContentList" class="block-about-table__list block-about-table__list_next" style="display: none">
+                    <li class="block-about-table__list-item"> Lorem ipsum dolor.</li>
+                    <li class="block-about-table__list-item"> Beatae, hic labore.</li>
+                    <li class="block-about-table__list-item"> Commodi, nemo, saepe?</li>
+                    <li class="block-about-table__list-item"> Deserunt, odit, tenetur?</li>
+                    <li class="block-about-table__list-item"> Eum perspiciatis</li>
+                    <li class="block-about-table__list-item"> Lorem ipsum dolor.</li>
+                    <li class="block-about-table__list-item"> Beatae, hic labore.</li>
+                    <li class="block-about-table__list-item"> Commodi, nemo, saepe?</li>
+                    <li class="block-about-table__list-item"> Deserunt, odit, tenetur?</li>
+                    <li class="block-about-table__list-item"> Eum perspiciatis</li>
+                </ol>
+                <button id="nextContent" class="btn">More</button>
             </div>
         </div>
     </div>
 </section>
-<section class="page">
+<section id="books" class="page">
     <div class="wrap">
         <h2 class="page__title container-book__page-title_top ">Other Books <span class="page__subtitle">Some books you might be interested in</span>
         </h2>
@@ -200,7 +216,7 @@
         <button class="container-book__btn">Browse all books</button>
     </div>
 </section>
-<section class="page page_dark">
+<section id="education" class="page page_dark">
     <div class="wrap">
         <div class="callback">
             <div class="carousel">
@@ -250,8 +266,7 @@
 <!--        <path d="M-1 0l802 61 799-61v789l-799 60-802-60V0z" fill="#44444f" fill-rule="evenodd"/>-->
 <!--    </svg>-->
 </section>
-<section>
-    <div class="page">
+<section id="skills" class="page">
         <div class="wrap">
             <div class="events">
                 <div class="events__block-img">
@@ -289,9 +304,8 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>
-<section class="page page_gray">
+<section id="portfolio" class="page page_gray">
     <div class="wrap">
         <div class="blog">
             <h2 class="blog__title">Latest from Blog <span class="blog__subtitle">Some of the latest posts from my personal blog</span>
@@ -326,7 +340,7 @@
         </div>
     </div>
 </section>
-<section class="page">
+<section id="clients" class="page">
     <div class="wrap">
         <div class="newsletter">
             <div class="newsletter__column">
@@ -348,7 +362,7 @@
         </div>
     </div>
 </section>
-<footer class="page page_dark-footer">
+<footer id="contact" class="page page_dark-footer">
     <div class="wrap">
         <div class="footer">
             <div class="footer-column footer-column_one">

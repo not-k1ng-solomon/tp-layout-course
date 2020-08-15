@@ -57,6 +57,9 @@ a {
     background: url("../img/bg.png"), no-repeat;
     background-size: cover;
     padding-bottom: 130px;
+    @media (max-width: 800px) {
+      padding-bottom: 50px;
+    }
   }
 
   &_gray {
@@ -66,7 +69,7 @@ a {
   &_dark {
     background: url('../img/bg-callback.png') no-repeat;
     background-size: contain;
-    @media (max-width: 900px) {
+    @media (max-width: 1050px) {
       background-color: #44444f;
       background-image: none;
     }
@@ -91,6 +94,9 @@ a {
 
     &_top {
       padding-top: 126px;
+      @media (max-width: 850px) {
+        padding-top: 50px;
+      }
     }
   }
 
@@ -116,6 +122,7 @@ a {
   }
 }
 
+
 .header {
   padding: 25px 15px 0;
   display: flex;
@@ -123,6 +130,52 @@ a {
   align-items: center;
   @media (max-width: 850px) {
     flex-direction: column;
+  }
+  @media (max-width: 650px) {
+    background-color: #16778d;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+  }
+
+  @media (min-width: 651px) {
+    .menu-close, .menu-triger {
+      display: none;
+    }
+  }
+  @media (max-width: 650px) {
+    .menu-triger {
+      color: $light_color;
+      font-size: 1.3rem;
+      display: block;
+      position: absolute;
+      right: 50px;
+      top: 23px;
+    }
+    .menu-close {
+      color: $light_color;
+      font-size: 1.5rem;
+      display: block;
+      position: absolute;
+      right: 50px;
+      top: 20px;
+      z-index: 100;
+    }
+    .menu-popup {
+      display: none;
+      background: #16778d;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0;
+      padding: 30px;
+      z-index: 9999;
+    }
+    .body_pointer * {
+      cursor: pointer;
+    }
   }
 
   &__logo {
@@ -140,32 +193,47 @@ a {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
+    @media (max-width: 650px) {
+      justify-content: left;
+      flex-direction: column;
+    }
 
     &__item {
       padding-bottom: 2px;
       margin-left: 16px;
-
-      border-bottom: 2px solid transparent;
-      transition: 0.5s;
-
-      &:hover {
-        border-bottom: 2px solid $accent_color;
-      }
-
       font: {
         family: 'Open Sans', Serif;
       }
       letter-spacing: 0.5px;
-    }
+      border-bottom: 2px solid transparent;
+      transition: 0.5s;
+      @media (max-width: 650px) {
+        margin-left: 0;
+        margin-bottom: 10px;
+        max-width: 100px;
+      }
 
-    &__item.active {
-      border-bottom: 2px solid $accent_color;
+      &:hover {
+        border-bottom: 2px solid $accent_color;
+      }
     }
 
     &__link {
       color: $light_color;
       font-size: $fs_sm;
     }
+
+    &__item.active {
+      border-bottom: 2px solid $accent_color;
+
+      .header-list__link {
+        @media (max-width: 650px) {
+          color: #b8ffc5;
+        }
+      }
+    }
+
+
   }
 }
 
@@ -173,14 +241,23 @@ a {
   padding-top: 120px;
   display: flex;
   justify-content: flex-start;
-
+  @media (max-width: 800px) {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+  }
+  @media (max-width: 650px) {
+    padding-top: 75px;
+  }
   &-demo {
     text-align: center;
     flex-basis: 390px;
     width: 370px;
     height: 558px;
     position: relative;
-
+    @media (max-width: 800px) {
+      display: none;
+    }
     background: {
       image: url('../img/book-v2.svg');
       size: contain;
@@ -199,6 +276,10 @@ a {
         weight: 700;
         family: 'Roboto Slab', serif;
         size: 1.9rem;
+      }
+
+      @media (max-width: 500px) {
+        left: 46px;
       }
 
       span {
@@ -223,6 +304,9 @@ a {
         size: 0.75rem;
         family: 'Open Sans', Serif;
       }
+      @media (max-width: 500px) {
+        left: 40px;
+      }
     }
   }
 }
@@ -233,6 +317,10 @@ a {
     left: 45px;
   }
   flex-basis: calc(100% - 400px);
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
 
   &.block-content_theme-while {
     color: $text_dark_color;
@@ -273,8 +361,13 @@ a {
 
   &__body {
     padding-right: 80px;
-    @media (max-width: 660px) {
+
+    @media (max-width: 800px) {
+      text-align: center;
       padding-right: 0;
+    }
+    @media (max-width: 660px) {
+      text-align: left;
     }
 
     p {
@@ -298,6 +391,9 @@ a {
     color: $light_color;
     text-align: center;
     box-shadow: 0 -2px #59bb88 inset;
+    @media (max-width: 800px) {
+      margin: 20px auto 0;
+    }
 
     &:focus {
       outline: none;
@@ -313,6 +409,10 @@ a {
       style: italic;
     }
     letter-spacing: 1.3px;
+    @media (max-width: 800px) {
+      margin-top: 5px;
+      text-align: center;
+    }
   }
 }
 
@@ -322,8 +422,11 @@ a {
   justify-content: space-between;
   @media (max-width: 660px) {
     flex-direction: column-reverse;
-    padding-top: 20px;
+    padding-top: 50px;
     text-align: center;
+  }
+  @media (max-width: 850px) {
+    padding: 50px 0 0 0;
   }
 
   .block-content {
@@ -384,6 +487,7 @@ a {
       @media (max-width: 660px) {
         margin: 20px auto;
       }
+
       &:focus {
         outline: none;
         padding: 12px 0;
@@ -439,6 +543,9 @@ a {
     flex-direction: column;
     padding: 30px 0;
   }
+  @media (max-width: 850px) {
+    padding: 50px 0;
+  }
 
   &__value {
     font-family: 'Roboto Slab', serif;
@@ -469,6 +576,9 @@ a {
   @media (max-width: 660px) {
     flex-direction: column;
     text-align: center;
+  }
+  @media (max-width: 850px) {
+    padding-bottom: 50px;
   }
 
   h3 {
@@ -547,6 +657,22 @@ a {
         text-align: left;
       }
 
+      &_next {
+        margin-top: 10px;
+        counter-reset: list 10;
+        position: relative;
+
+        &::before {
+          content: '';
+          background-color: #5fc9b6;
+          position: absolute;
+          height: 1px;
+          width: 100px;
+          top: -7px;
+          display: block;
+        }
+      }
+
       &-item {
         counter-increment: list;
         list-style-type: none;
@@ -587,6 +713,10 @@ a {
 
   &__page-title_top {
     padding-top: 96px;
+    @media (max-width: 850px) {
+      padding-top: 50px;
+      margin: 0;
+    }
   }
 
   &__block-image {
@@ -692,6 +822,7 @@ a {
     &:focus {
       outline: none;
     }
+
     @media (max-width: 900px) {
       margin-bottom: 50px;
       margin-top: 30px;
@@ -703,7 +834,7 @@ a {
   color: #9191b5;
   padding-top: 189px;
   padding-bottom: 165px;
-  @media (max-width: 900px) {
+  @media (max-width: 1050px) {
     padding: 50px 0;
   }
 
@@ -729,6 +860,9 @@ a {
     font-family: 'Open Sans', Serif;
     line-height: 24px;
     letter-spacing: 0.58px;
+    @media (max-width: 650px) {
+      padding: 16px 0 0 0;
+    }
   }
 
   .carousel {
@@ -815,6 +949,9 @@ a {
     flex-direction: column;
     padding: 30px 0;
     text-align: center;
+  }
+  @media (max-width: 850px) {
+    padding: 50px 0;
   }
 
   &__block-img {
@@ -966,6 +1103,9 @@ a {
 .blog {
   padding: 99px 0 100px 0;
   text-align: center;
+  @media (max-width: 850px) {
+    padding: 50px 0;
+  }
 
   &__title {
     text-align: center;
@@ -973,6 +1113,9 @@ a {
     letter-spacing: 2.8px;
     line-height: 40px;
     color: $text_dark_color;
+    @media (max-width: 850px) {
+      margin: 0;
+    }
 
     &_top {
       padding-top: 126px;
@@ -1091,6 +1234,9 @@ a {
     flex-direction: column;
     text-align: center;
   }
+  @media (max-width: 850px) {
+    padding: 50px 0;
+  }
 
   &__column {
     flex-basis: 49%;
@@ -1139,6 +1285,9 @@ a {
       background-color: #44444f;
       color: #8a88ad;
       letter-spacing: 0.4px;
+      @media (max-width: 750px) {
+        max-width: 400px;
+      }
 
       &:focus {
         outline: none;
@@ -1163,6 +1312,9 @@ a {
       border: 0;
       width: 100%;
       box-shadow: 0 -2px #adedbb inset;
+      @media (max-width: 750px) {
+        max-width: 440px;
+      }
 
       &:focus {
         outline: none;
@@ -1182,6 +1334,9 @@ a {
     flex-direction: column;
     text-align: center;
     padding: 60px 0;
+  }
+  @media (max-width: 850px) {
+    padding: 50px 0;
   }
 
   &-column {
