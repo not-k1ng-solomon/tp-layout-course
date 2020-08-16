@@ -1,0 +1,10 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="137px" height="28px">
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="28px" x="39px" y="24px"><tspan font-size="28px" font-family="RobotoSlab" font-weight="bold" fill="#FEFEFE">BUK</tspan><tspan font-size="28px" font-family="RobotoSlab" font-weight="bold" fill="#65E496">EE</tspan></text>
+<path fill-rule="evenodd"  fill="rgb(101, 228, 150)"
+ d="M28.000,27.999 L-0.000,-0.001 L28.000,-0.001 L28.000,27.999 Z"/>
+<path fill-rule="evenodd"  fill="rgb(128, 128, 155)"
+ d="M28.000,-0.001 L-0.000,27.999 L-0.000,-0.001 L28.000,-0.001 Z"/>
+</svg>
